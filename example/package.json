@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "main": "fib.js",
+  "license": "MIT",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.17.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "rollup": "^2.33.1"
+  }
+}
