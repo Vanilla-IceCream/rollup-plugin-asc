@@ -5,7 +5,8 @@
   "main": "dist/rollup-plugin-asc.cjs.js",
   "module": "dist/rollup-plugin-asc.esm.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
