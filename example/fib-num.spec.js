@@ -1,5 +1,8 @@
 const assert = require('assert');
 
-const { fib } = require('./fib-num.js');
+const fibNum = require('./fib-num.js');
 
-assert.equal(fib(8), 21);
+const instance = fibNum({});
+
+assert.equal(instance.exports.fib(8), 21);
+console.log('fib(8) =', instance.exports.fib(8));

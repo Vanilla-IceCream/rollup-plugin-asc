@@ -1,9 +1,12 @@
 {
   "name": "rollup-plugin-asc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Compile AssemblyScript with Rollup.",
   "main": "dist/rollup-plugin-asc.cjs.js",
   "module": "dist/rollup-plugin-asc.esm.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "test": "jest --coverage"

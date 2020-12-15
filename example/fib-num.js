@@ -10,9 +10,11 @@ var fs__default = /*#__PURE__*/_interopDefaultLegacy(fs);
 var path__default = /*#__PURE__*/_interopDefaultLegacy(path);
 var loader__default = /*#__PURE__*/_interopDefaultLegacy(loader);
 
-var fibNum = loader__default['default'].instantiateSync(
-            fs__default['default'].readFileSync(path__default['default'].join(__dirname, 'fib-num.wasm')),
-            {},
-          ).exports;
+var fibNum = (imports) => {
+            return loader__default['default'].instantiateSync(
+              fs__default['default'].readFileSync(path__default['default'].join(__dirname, 'fib-num.wasm')),
+              { ...imports },
+            );
+          };
 
 module.exports = fibNum;

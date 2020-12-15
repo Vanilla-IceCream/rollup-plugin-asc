@@ -33,10 +33,12 @@ export default (options = {}) => {
           import path from 'path';
           import loader from '@assemblyscript/loader/umd';
 
-          export default loader.instantiateSync(
-            fs.readFileSync(path.join(__dirname, '${parsed.name}.wasm')),
-            {},
-          ).exports;
+          export default (imports) => {
+            return loader.instantiateSync(
+              fs.readFileSync(path.join(__dirname, '${parsed.name}.wasm')),
+              { ...imports },
+            );
+          };
         `,
         map: { mappings: '' },
       };

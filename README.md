@@ -54,28 +54,28 @@ Then call `rollup` either via the [CLI](https://www.rollupjs.org/guide/en/#comma
 
 ### `output`
 
-Type: `string`
-Default: `''`
+Type: `string`<br>
+Default: `''`<br>
 Example: `output: path.join(__dirname, 'dist'),`
 
 ### `args`
 
-Type: `string[]`
-Default: `[]`
+Type: `string[]`<br>
+Default: `[]`<br>
 Example: `args: ['--measure'],`
 
 The arguments that is passed straight to the [AssemblyScript compiler library](https://www.assemblyscript.org/compiler.html#command-line-options).
 
 ### `textFile`
 
-Type: `boolean`
-Default: `false`
+Type: `boolean`<br>
+Default: `false`<br>
 Example: `textFile: true,`
 
 ### `tsdFile`
 
-Type: `boolean`
-Default: `false`
+Type: `boolean`<br>
+Default: `false`<br>
 Example: `tsdFile: true,`
 
 ## Example
